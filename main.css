@@ -1,0 +1,33 @@
+html{
+  font-size: 16px;
+  background-color: black;
+  background-image: url('assets/forestBackground.jpg');
+  background-attachment: fixed;
+  background-position: 100%;
+  background-size: cover;
+}
+
+body {
+  background-color: transparent;
+  color: black;
+  font-family: 'Cardo', serif;
+}
+
+.wrapper{
+  position: relative;
+  padding: 5em;
+}
+.main{
+  position: relative;
+  width: 50em;
+  margin: auto;
+  padding: 2em 2em 2em 2em;
+  background: white;
+  border-radius: .5em;
+  text-align: center;
+}
+.row{
+  display: flex;
+  justify-content: space-around;
+  /* padding: 1em; */
+}
