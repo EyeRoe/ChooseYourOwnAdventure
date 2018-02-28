@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   newEvent(currentPage)
 
   function newEvent(num) {
-    if(num == 666){
+    if (num == 666) {
       location.reload()
     }
     newIMG(storyEvents[num]['img'])
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     currentPage = targetButton.dataset.page
     console.log(currentPage)
     newEvent(currentPage)
-  
+
   }
   function newButtons(arr) {
     var newRow = document.createElement('div')
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
       newButtonsArray.push(temp)
     }
     for (var i = 0; i < oldButtonsArray.length; i++) {
-      oldButtonsArray[i].removeEventListener('click',onButtonClick)
+      oldButtonsArray[i].removeEventListener('click', onButtonClick)
     }
     oldButtonsArray = newButtonsArray
   }
@@ -197,9 +197,9 @@ var storyEvents = {
   },
   9: {
     //
-    img: 'assets/poison.png.jpg',
+    img: 'assets/poison.png',
     text:
-"It was poisonous...",
+      "It was poisonous...",
     choices: [
       {
         bText: 'Start Over??',
@@ -311,7 +311,7 @@ var storyEvents = {
     //Witch Cottage
     img: 'assets/witch.jpg',
     text:
-"You enter the Witch's Cabin... She is there and so is the Princess. You...",
+      "You enter the Witch's Cabin... She is there and so is the Princess. You...",
     choices: [
       {
         bText: 'Fight the Witch!',
@@ -331,8 +331,8 @@ var storyEvents = {
     //Witch Fight
     img: 'assets/magicSpell.jpg',
     text:
-'You fight the witch and win!' ,   
-choices: [
+      'You fight the witch and win!',
+    choices: [
       {
         bText: 'Yay!!',
         rPage: 21,
@@ -343,7 +343,7 @@ choices: [
     //Witch Bargain
     img: 'assets/gold.jpeg',
     text:
-    "You offer the Witch money from the King in exchange for the Princess. She laughs and kills you both.",
+      "You offer the Witch money from the King in exchange for the Princess. She laughs and kills you both.",
     choices: [
       {
         bText: 'Start over??',
@@ -355,7 +355,7 @@ choices: [
     //Witch Seduce
     img: 'assets/seductiveMouths.jpeg',
     text:
-    "You seduce the Witch as a ploy to free the Princess. However, you realize that the Witch is quite beautiful and that you two had similar childhoods. You talk quietly all through the night and fall in love. You sacrifice the Princess together as an act of love. Screw the Kingdom.",
+      "You seduce the Witch as a ploy to free the Princess. However, you realize that the Witch is quite beautiful and that you two had similar childhoods. You talk quietly all through the night and fall in love. You sacrifice the Princess together as an act of love. Screw the Kingdom.",
     choices: [
       {
         bText: 'Again?',
@@ -367,7 +367,7 @@ choices: [
     //Happy Ending
     img: 'assets/congrats.jpeg',
     text:
-"Congrats, you saved the Princess.",
+      "Congrats, you saved the Princess.",
     choices: [
       {
         bText: 'Again?',
